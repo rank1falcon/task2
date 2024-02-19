@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../imgs/5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.astro{
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+    
+    
+    
+}
+
+.astro img{
+    width: 39%;
+    height: 100%;
+    position: absolute;
+    padding-left: 50px;
+    animation: moving 5s linear infinite;
+    
+
+}
+@keyframes moving{
+    0%{
+        top: -7%;
+    }
+    50%{
+        top: -12%;
+    }
+    100%{
+        top: -7%;
+    }
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    margin-left: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    top: 140px;
+    right: 340px;
+   
+}
+
+.content h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+/* CSS for screens less than 600px */
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  }
